@@ -1088,7 +1088,177 @@ body{
 
     margin-bottom:6px;
 
-    font-size:22px;
+
+    /* ===========================
+        MOBILE
+=========================== */
+
+@media (max-width: 768px){
+
+    body{
+
+        overflow-x:hidden;
+
+    }
+
+    .container{
+
+        padding:30px 15px 50px;
+
+        min-height:auto;
+
+    }
+
+    .hero{
+
+        width:100%;
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        justify-content:center;
+
+        gap:30px;
+
+    }
+
+    .hero-left{
+
+        width:100%;
+
+        align-items:center;
+
+        text-align:center;
+
+    }
+
+    .hero-right{
+
+        width:100%;
+
+        display:flex;
+
+        justify-content:center;
+
+    }
+
+    .page-title{
+
+        margin-bottom:20px;
+
+    }
+
+    .page-title h1{
+
+        font-size:64px;
+
+    }
+
+    .page-title p{
+
+        font-size:16px;
+
+        letter-spacing:4px;
+
+    }
+
+    .click-tip{
+
+        justify-content:center;
+
+    }
 
 }
 
+    font-size:22px;
+
+}
+@media (max-width:768px){
+
+    .envelope{
+
+        width:340px;
+
+        height:240px;
+
+    }
+
+    .envelope::before{
+
+        border-top:135px solid var(--envelope-tab);
+        border-left:170px solid transparent;
+        border-right:170px solid transparent;
+
+    }
+
+    .envelope::after{
+
+        border-top:135px solid transparent;
+        border-right:170px solid var(--envelope-cover);
+        border-bottom:105px solid var(--envelope-tab);
+        border-left:170px solid var(--envelope-cover);
+
+    }
+
+    .letter{
+
+        width:82%;
+
+        height:94%;
+
+    }
+
+    .flap .letter{
+
+        bottom:170px;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .invitation-card{
+
+        width:95vw;
+
+        max-width:95vw;
+
+        padding:35px 20px;
+
+        border-radius:18px;
+
+        overflow-y:auto;
+
+        max-height:90vh;
+
+    }
+
+    .guest-name-full{
+
+        font-size:54px;
+
+    }
+
+    .day-full{
+
+        font-size:70px;
+
+    }
+
+    .month-full{
+
+        font-size:26px;
+
+    }
+
+    .year-full{
+
+        font-size:28px;
+
+    }
+
+}
