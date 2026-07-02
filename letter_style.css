@@ -81,6 +81,7 @@ body{
     display:flex;
 
     justify-content:center;
+     margin-top:90px; 
 
 }
 
@@ -1139,7 +1140,7 @@ body{
 
     justify-content:center;
 
-    margin-top:100px;   /* đẩy phong bì xuống */
+    margin-top:90px;   /* đẩy phong bì xuống */
 
 }
 
