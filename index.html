@@ -274,17 +274,24 @@
         // ĐỌC TÊN KHÁCH TỪ URL
         // ==========================
 
-        const params = new URLSearchParams(window.location.search);
+        // ==========================
+// ĐỌC TÊN KHÁCH TỪ URL
+// ==========================
 
-        const guest = params.get("guest");
+const params = new URLSearchParams(window.location.search);
 
-        if (guest) {
+const guest = params.get("guest");
 
-            document.getElementById("guestName").textContent = guest;
+const displayName =
+    guest && guest.trim()
+        ? guest.trim()
+        : "Quý khách";
 
-            document.getElementById("guestNameFull").textContent = guest;
+document.getElementById("guestName").textContent = displayName;
+document.getElementById("guestNameFull").textContent = displayName;
 
-        }
+// Đổi tiêu đề tab
+document.title = "Thư mời • " + displayName;
 
         // ==========================
         // MỞ THIỆP
