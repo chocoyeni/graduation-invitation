@@ -574,20 +574,28 @@ body{
 .invitation-full{
 
     position:fixed;
+
     inset:0;
 
     display:flex;
+
     justify-content:center;
+
     align-items:center;
 
-    background:rgba(255,255,255,.92);
+    background:rgba(0,0,0,.25);
+
     backdrop-filter:blur(6px);
 
     opacity:0;
-    visibility:hidden;
-    transition:.4s;
 
-    overflow:hidden;
+    visibility:hidden;
+
+
+    transition:.45s ease;
+
+    z-index:9999;
+
 }
 
 .invitation-full.show{
@@ -766,17 +774,25 @@ body{
     visibility:visible;
 
 }
+
 .invitation-card{
+     
+    
+     width:600px;
 
-    width:min(680px,88vw);
+    max-width:88vw;
 
-    max-height:88vh;
+
+
+    padding:35px 40px;
+width:min(720px,92vw);
+    height: auto;
 
     background:#fffdfb;
 
     border:1px solid #eef4fb;
 
-    padding:32px 40px;
+
 
     box-shadow:0 25px 70px rgba(0,0,0,.18);
 
@@ -786,11 +802,10 @@ body{
 
     align-items:center;
 
-    overflow:hidden;
-
     animation:popup .45s ease;
 
 }
+
 @keyframes popup{
 
     from{
@@ -884,7 +899,7 @@ body{
 
     width:100%;
 
-    margin-top:30px;
+    margin-top:55px;
 
     display:flex;
 
@@ -987,7 +1002,7 @@ body{
 
     width:100%;
 
-    margin-top:25px;
+    margin-top:45px;
 
     display:flex;
 
@@ -1038,7 +1053,7 @@ body{
 
     gap:18px;
 
-    margin-bottom:12px;
+    margin-bottom:24px;
 
 }
 
@@ -1242,7 +1257,8 @@ body{
         padding:20px 18px;
 
         border-radius:18px;
-        max-height:92vh;
+
+        overflow:hidden;
 
     }
 
@@ -1318,7 +1334,7 @@ body{
 
         margin-top:10px;
 
-        font-size:15px;
+        font-size:24px;
 
     }
 
