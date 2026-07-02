@@ -774,6 +774,9 @@ body{
 
 .invitation-card{
 
+    transform: scale(0.92);
+
+transform-origin: center;
      width:min(720px,92vw);
 
     max-width:92vw;
