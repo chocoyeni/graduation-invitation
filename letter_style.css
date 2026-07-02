@@ -1089,11 +1089,11 @@ body{
     margin-bottom:6px;
 
 }
-    /* ===========================
-        MOBILE
-=========================== */
+   /* =====================================
+            MOBILE
+===================================== */
 
-@media (max-width: 768px){
+@media (max-width:768px){
 
     body{
 
@@ -1103,9 +1103,9 @@ body{
 
     .container{
 
-        padding:30px 15px 50px;
+        min-height:100vh;
 
-        min-height:auto;
+        padding:30px 15px;
 
     }
 
@@ -1113,15 +1113,9 @@ body{
 
         width:100%;
 
-        display:flex;
-
         flex-direction:column;
 
-        align-items:center;
-
-        justify-content:center;
-
-        gap:30px;
+        gap:35px;
 
     }
 
@@ -1131,15 +1125,11 @@ body{
 
         align-items:center;
 
-        text-align:center;
-
     }
 
     .hero-right{
 
         width:100%;
-
-        display:flex;
 
         justify-content:center;
 
@@ -1147,21 +1137,30 @@ body{
 
     .page-title{
 
-        margin-bottom:20px;
+        text-align:center;
+
+        margin-bottom:25px;
 
     }
 
     .page-title h1{
 
-        font-size:64px;
+        font-size:58px;
 
     }
 
     .page-title p{
 
-        font-size:16px;
+        font-size:15px;
 
         letter-spacing:4px;
+
+    }
+
+    .page-title::after{
+
+        margin-left:auto;
+        margin-right:auto;
 
     }
 
@@ -1171,9 +1170,15 @@ body{
 
     }
 
-}
+    .tip-text{
 
-@media (max-width:768px){
+        text-align:center;
+
+        font-size:16px;
+
+    }
+
+    /* Envelope */
 
     .envelope{
 
@@ -1204,8 +1209,6 @@ body{
 
         width:82%;
 
-        height:94%;
-
     }
 
     .flap .letter{
@@ -1214,47 +1217,150 @@ body{
 
     }
 
-}
+    .guest-name{
 
-@media (max-width:768px){
+        font-size:32px;
+
+    }
+
+    .day{
+
+        font-size:56px;
+
+    }
+
+    /* Popup */
 
     .invitation-card{
 
-        width:95vw;
+        width:94vw;
 
-        max-width:95vw;
+        height:92vh;
 
-        padding:35px 20px;
+        padding:20px 18px;
 
         border-radius:18px;
 
-        overflow-y:auto;
+        overflow:hidden;
 
-        max-height:90vh;
+    }
+
+    .invitation-hat img{
+
+        width:60px;
+
+        margin-bottom:12px;
+
+    }
+
+    .guest-label{
+
+        font-size:16px;
+
+        margin-top:8px;
+
+        margin-bottom:8px;
 
     }
 
     .guest-name-full{
 
-        font-size:54px;
+        font-size:48px;
+
+        margin:10px 0 20px;
 
     }
 
-    .day-full{
+    .invitation-title-small{
 
-        font-size:70px;
+        font-size:16px;
+
+        letter-spacing:6px;
+
+    }
+
+    .invitation-title{
+
+        font-size:36px;
+
+        white-space:nowrap;
+
+        margin:10px 0 20px;
+
+    }
+
+    .calendar-full{
+
+        margin-top:20px;
+
+    }
+
+    .calendar-text{
+
+        font-size:18px;
 
     }
 
     .month-full{
 
-        font-size:26px;
+        font-size:18px;
+
+    }
+
+    .day-full{
+
+        font-size:68px;
 
     }
 
     .year-full{
 
-        font-size:28px;
+        margin-top:10px;
+
+        font-size:24px;
 
     }
+
+    .info-full{
+
+        margin-top:20px;
+
+        gap:14px;
+
+    }
+
+    .info-row{
+
+        gap:12px;
+
+        margin-bottom:10px;
+
+    }
+
+    .info-icon{
+
+        font-size:18px;
+
+        width:20px;
+
+    }
+
+    .info-title{
+
+        font-size:15px;
+
+    }
+
+    .info-sub{
+
+        font-size:13px;
+
+    }
+
+    .phone-number{
+
+        font-size:15px;
+
+    }
+
 }
