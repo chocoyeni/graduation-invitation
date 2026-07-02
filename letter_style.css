@@ -1105,21 +1105,21 @@ body{
 
     .container{
 
-        min-height:100vh;
+    min-height:100vh;
 
-        padding:30px 15px;
+    padding:20px 15px 60px;
 
-    }
+}
 
     .hero{
 
-        width:100%;
+    width:100%;
 
-        flex-direction:column;
+    flex-direction:column;
 
-        gap:35px;
+    gap:20px;
 
-    }
+}
 
     .hero-left{
 
@@ -1129,13 +1129,17 @@ body{
 
     }
 
-    .hero-right{
+   .hero-right{
 
-        width:100%;
+    width:100%;
 
-        justify-content:center;
+    display:flex;
 
-    }
+    justify-content:center;
+
+    margin-top:50px;   /* đẩy phong bì xuống */
+
+}
 
     .page-title{
 
