@@ -604,8 +604,9 @@ body{
 
 .invitation-hat img{
 
-        margin-bottom:20px;
-    width:90px;
+           width:clamp(60px,6vw,90px);
+
+    margin-bottom:clamp(12px,2vw,20px);
 
     display:block;
 
@@ -831,7 +832,7 @@ body{
 
     font-family:"Bebas Neue",sans-serif;
 
-    font-size:20px;
+      font-size:clamp(14px,2vw,20px);
 
     letter-spacing:10px;
 
@@ -873,7 +874,7 @@ body{
 
     font-family:"Great Vibes",cursive;
 
-    font-size:80px;
+      font-size:clamp(42px,6vw,80px);
 
     color:#efb6c7;
 
@@ -1288,7 +1289,7 @@ body{
 
     .invitation-title{
 
-        font-size:36px;
+         font-size:clamp(32px,4vw,55px);
 
         white-space:nowrap;
 
