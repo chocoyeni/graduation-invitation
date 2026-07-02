@@ -680,7 +680,7 @@ body{
     }
 
     .tip-text{
-
+        font-family:"Poppins",sans-serif;
         text-align:center;
 
     }
@@ -1145,7 +1145,7 @@ transform-origin: center;
 
     justify-content:center;
 
-    margin-top:90px;   /* đẩy phong bì xuống */
+    margin-top:95px;   /* đẩy phong bì xuống */
 
 }
 
@@ -1164,7 +1164,7 @@ transform-origin: center;
     }
 
     .page-title p{
-
+           font-family:"Poppins",sans-serif;
         font-size:15px;
 
         letter-spacing:4px;
@@ -1310,7 +1310,7 @@ transform-origin: center;
     }
 
     .calendar-text{
-
+        font-family:"Poppins",sans-serif;
         font-size:18px;
 
     }
