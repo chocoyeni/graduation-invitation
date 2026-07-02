@@ -1107,7 +1107,7 @@ body{
 
     min-height:100vh;
 
-    padding:20px 15px 60px;
+    padding:20px 15px 40px;
 
 }
 
@@ -1117,7 +1117,7 @@ body{
 
     flex-direction:column;
 
-    gap:20px;
+    gap:15px;
 
 }
 
@@ -1137,7 +1137,7 @@ body{
 
     justify-content:center;
 
-    margin-top:50px;   /* đẩy phong bì xuống */
+    margin-top:70px;   /* đẩy phong bì xuống */
 
 }
 
