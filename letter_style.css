@@ -1088,7 +1088,7 @@ body{
 
     margin-bottom:6px;
 
-
+}
     /* ===========================
         MOBILE
 =========================== */
@@ -1173,9 +1173,6 @@ body{
 
 }
 
-    font-size:22px;
-
-}
 @media (max-width:768px){
 
     .envelope{
@@ -1260,5 +1257,3 @@ body{
         font-size:28px;
 
     }
-
-}
