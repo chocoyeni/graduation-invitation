@@ -1,0 +1,1094 @@
+:root {
+    --primary: #ffffff;
+
+    /* Background */
+    --bg-color: #f3f4f7;
+
+    /* Envelope */
+    --bg-envelope-color: #d3e6f6;
+    --envelope-tab: #d3e6f6;
+    --envelope-cover: #97b4dd;
+
+    /* Accent */
+    --accent: #ffcfd5;
+
+    /* Text */
+    --txt-color: #5b6572;
+
+    /* Shadow */
+    --shadow-color: rgba(0,0,0,.12);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:var(--bg-color);
+    font-family:"Poppins",sans-serif;
+}
+
+.container{
+
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#fff;
+}
+
+/* ===========================
+        HERO LAYOUT
+=========================== */
+
+.hero{
+
+    width:1100px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.hero-left{
+
+    width:320px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+}
+
+.hero-right{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+/* ===========================
+        TITLE
+=========================== */
+
+.page-title{
+
+    text-align:left;
+
+    margin-bottom:70px;
+
+}
+
+.page-title h1{
+
+    font-family:"Great Vibes",cursive;
+
+    font-size:82px;
+
+    line-height:1;
+
+    color:#8fb2e7;
+
+    font-weight:400;
+
+}
+
+.page-title p{
+
+    margin-top:8px;
+
+    font-size:18px;
+
+    letter-spacing:6px;
+
+    color:#f4aebd;
+
+    font-weight:500;
+
+}
+
+.page-title::after{
+
+    content:"";
+
+    display:block;
+
+    width:180px;
+
+    height:2px;
+
+    margin-top:18px;
+
+    background:#d8e8f7;
+
+}
+
+/* ===========================
+      CLICK TIP
+=========================== */
+
+.click-tip{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    color:#8fb2e7;
+
+    animation:tip 2s ease-in-out infinite;
+
+}
+
+.tip-text{
+
+    font-size:18px;
+
+    line-height:1.6;
+
+    text-align:left;
+
+    font-weight:500;
+
+}
+
+.arrow{
+
+    width:60px;
+
+    height:2px;
+
+    background:#8fb2e7;
+
+    border-radius:2px;
+
+    position:relative;
+
+}
+
+.arrow::after{
+
+    content:"";
+
+    position:absolute;
+
+    right:0;
+
+    top:-4px;
+
+    width:10px;
+
+    height:10px;
+
+    border-top:2px solid #8fb2e7;
+
+    border-right:2px solid #8fb2e7;
+
+    transform:rotate(45deg);
+
+}
+
+@keyframes tip{
+
+    0%,100%{
+
+        opacity:.5;
+
+        transform:translateX(0);
+
+    }
+
+    50%{
+
+        opacity:1;
+
+        transform:translateX(8px);
+
+    }
+
+}
+
+/* ===========================
+      ENVELOPE
+=========================== */
+
+.envelope-wrapper{
+
+    position:relative;
+
+    padding:40px;
+
+    background:transparent;
+
+    animation:float 3s ease-in-out infinite;
+
+    transition:.3s;
+
+}
+
+.envelope-wrapper:hover{
+
+    cursor:pointer;
+
+    transform:translateY(-15px) scale(1.02);
+
+}
+
+@keyframes float{
+
+    0%,100%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px);
+
+    }
+
+}
+
+.envelope{
+
+    position:relative;
+
+    width:500px;
+
+    height:350px;
+
+}
+
+/* Nắp */
+
+.envelope::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    z-index:4;
+
+    border-top:195px solid var(--envelope-tab);
+    border-left:250px solid transparent;
+    border-right:250px solid transparent;
+
+    transform-origin:top;
+
+    transition:.7s ease;
+
+}
+
+/* Thân */
+
+.envelope::after{
+
+    content:"";
+
+    position:absolute;
+
+    z-index:3;
+
+    width:0;
+    height:0;
+
+    border-top:195px solid transparent;
+    border-right:250px solid var(--envelope-cover);
+    border-bottom:155px solid var(--envelope-tab);
+    border-left:250px solid var(--envelope-cover);
+
+}
+
+/* ===========================
+      LETTER
+=========================== */
+
+.letter{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:0;
+
+    transform:translateX(-50%);
+
+    width:80%;
+
+    height:94%;
+
+    background:#fff;
+
+    border-radius:14px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+
+    transition:
+        bottom .8s cubic-bezier(.22,.61,.36,1),
+        transform .8s cubic-bezier(.22,.61,.36,1);
+
+    z-index:2;
+
+}
+
+.flap .envelope::before{
+
+    transform:rotateX(180deg);
+
+    z-index:0;
+
+}
+
+.flap .letter{
+
+    bottom:250px;
+
+}
+
+/* ===========================
+      LETTER CONTENT
+=========================== */
+
+.letter-content{
+
+    width:100%;
+    height:100%;
+
+    padding:8px 15px 15px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:flex-start;
+
+    text-align:center;
+
+    transform:translateY(-20px);
+
+}
+
+/* Mũ tốt nghiệp */
+
+.cap{
+
+    margin-top:6px;
+
+    margin-bottom:10px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.cap img{
+
+    width:60px;
+
+    height:auto;
+
+    display:block;
+
+}
+
+/* Thân mời */
+
+.invite-text{
+
+    margin-top:10px;
+
+    color:#8eaee0;
+
+    font-size:18px;
+
+    font-weight:300;
+
+}
+
+.guest-name{
+
+    margin-top:8px;
+
+    font-size:44px;
+
+    font-weight:300;
+
+    color:#ffc7d4;
+
+}
+
+/* Tháng */
+
+.month{
+
+    margin-top:18px;
+
+    color:#8eaee0;
+
+    font-size:24px;
+
+    letter-spacing:2px;
+
+}
+
+/* Calendar */
+
+.calendar{
+
+    width:100%;
+
+    margin-top:18px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.calendar-side{
+
+    width:32%;
+
+}
+
+.line{
+
+    width:100%;
+
+    height:2px;
+
+    background:#8eaee0;
+
+    margin-bottom:10px;
+
+}
+
+.calendar-label,
+
+.calendar-time{
+
+    color:#ffc7d4;
+
+    font-size:20px;
+
+    font-weight:600;
+
+}
+
+.calendar-center{
+
+    width:36%;
+
+}
+
+.day{
+
+    font-size:68px;
+
+    line-height:1;
+
+    color:#8eaee0;
+
+    font-weight:300;
+
+}
+
+.year{
+
+    margin-top:10px;
+
+    font-size:28px;
+
+    color:#8eaee0;
+
+}
+
+/* Thông tin */
+
+.info{
+
+    width:100%;
+
+    margin-top:28px;
+
+    text-align:left;
+
+}
+
+.info-item{
+
+    margin-bottom:10px;
+
+    color:#8eaee0;
+
+    font-size:14px;
+
+    line-height:1.5;
+
+}
+
+.phone{
+
+    color:#ffc7d4;
+
+}
+
+/* ===========================
+      FULL INVITATION
+=========================== */
+
+.invitation-full{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.25);
+
+    backdrop-filter:blur(6px);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.45s ease;
+
+    z-index:9999;
+
+}
+
+.invitation-full.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.invitation-hat img{
+
+    width:90px;
+
+    display:block;
+
+    box-shadow:none;
+
+    background:none;
+
+}
+
+/* ===========================
+      HEART (ẨN)
+=========================== */
+
+.heart{
+
+    display:none;
+
+}
+
+/* ===========================
+      RESPONSIVE
+=========================== */
+
+@media (max-width:1100px){
+
+    .hero{
+
+        width:100%;
+
+        padding:40px;
+
+        flex-direction:column;
+
+        gap:60px;
+
+    }
+
+    .hero-left{
+
+        width:100%;
+
+        align-items:center;
+
+        text-align:center;
+
+    }
+
+    .page-title{
+
+        text-align:center;
+
+        margin-bottom:40px;
+
+    }
+
+    .page-title::after{
+
+        margin-left:auto;
+
+        margin-right:auto;
+
+    }
+
+    .click-tip{
+
+        justify-content:center;
+
+    }
+
+    .tip-text{
+
+        text-align:center;
+
+    }
+
+}
+
+@media (max-width:700px){
+
+    .envelope{
+
+        width:340px;
+
+        height:240px;
+
+    }
+
+    .envelope::before{
+
+        border-top:135px solid var(--envelope-tab);
+        border-left:170px solid transparent;
+        border-right:170px solid transparent;
+
+    }
+
+    .envelope::after{
+
+        border-top:135px solid transparent;
+        border-right:170px solid var(--envelope-cover);
+        border-bottom:105px solid var(--envelope-tab);
+        border-left:170px solid var(--envelope-cover);
+
+    }
+
+    .flap .letter{
+
+        bottom:170px;
+
+    }
+
+    .page-title h1{
+
+        font-size:64px;
+
+    }
+
+    .guest-name{
+
+        font-size:34px;
+
+    }
+
+}
+
+
+
+/* ===================================
+        FULL INVITATION CARD
+=================================== */
+
+.invitation-full{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.25);
+
+    backdrop-filter:blur(6px);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.4s;
+
+    z-index:9999;
+
+}
+
+.invitation-full.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.invitation-card{
+
+    width:720px;
+
+    max-width:92vw;
+
+    background:#fffdfb;
+
+    border:1px solid #eef4fb;
+
+    padding:50px 60px;
+
+    box-shadow:0 25px 70px rgba(0,0,0,.18);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    animation:popup .45s ease;
+
+}
+
+@keyframes popup{
+
+    from{
+
+        transform:scale(.9);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+/* ========================= */
+
+.invitation-hat img{
+
+    width:90px;
+
+    margin-bottom:20px;
+
+}
+
+.invitation-title-small{
+    margin-bottom:10px;
+
+    font-family:"Bebas Neue",sans-serif;
+
+    font-size:20px;
+
+    letter-spacing:10px;
+
+    color:#8db2e5;
+
+}
+
+.invitation-title{
+    margin-bottom:10px;
+    margin-top:15px;
+
+    font-family:"Bebas Neue",sans-serif;
+
+    font-size:55px;
+
+    letter-spacing:2px;
+
+    color:#efb5c6;
+
+    line-height:1;
+
+}
+
+.guest-label{
+    margin-bottom:10px;
+    margin-top:25px;
+
+    color:#8fb2e7;
+
+    font-size:22px;
+
+    letter-spacing:4px;
+
+}
+
+.guest-name-full{
+    margin-bottom:10px;
+    margin-top:20px;
+
+    font-family:"Great Vibes",cursive;
+
+    font-size:80px;
+
+    color:#efb6c7;
+
+    line-height:1;
+
+}
+
+/* ===========================
+        CALENDAR
+=========================== */
+
+.calendar-full{
+
+    width:100%;
+
+    margin-top:55px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.calendar-left,
+.calendar-right{
+
+    width:28%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.calendar-line{
+
+    width:100%;
+
+    height:2px;
+
+    background:#9ebae8;
+
+    margin:14px 0;
+
+}
+
+.calendar-text{
+
+    font-family:"Bebas Neue",sans-serif;
+
+    font-size:28px;
+
+    color:#efb5c6;
+
+    letter-spacing:2px;
+
+}
+
+.calendar-middle{
+
+    width:44%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.month-full{
+
+    color:#8fb2e7;
+
+    font-size:22px;
+
+    letter-spacing:3px;
+
+    margin-bottom:8px;
+
+}
+
+.day-full{
+
+    font-family:"Antonio",sans-serif;
+
+    font-size:96px;
+
+    color:#8db2e5;
+
+    line-height:.9;
+
+}
+
+.year-full{
+
+    margin-top:30px;
+
+    font-family:"Bebas Neue",sans-serif;
+
+    font-size:34px;
+
+    color:#8fb2e7;
+
+}
+
+/* ===========================
+        INFO
+=========================== */
+
+.info-full{
+
+    width:100%;
+
+    margin-top:45px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+    color:#8fb2e7;
+
+    font-size:17px;
+
+    line-height:1.7;
+
+}
+
+.phone-full{
+
+    color:#f4aebd;
+
+}
+
+
+/* ===========================
+        FOOTER
+=========================== */
+
+.footer-text{
+
+    margin-top:30px;
+
+    text-align:center;
+
+    color:#8eaee0;
+
+    font-size:15px;
+
+    line-height:1.8;
+
+    font-style:italic;
+
+}
+
+.info-row{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    margin-bottom:24px;
+
+}
+
+.info-icon{
+
+    width:28px;
+
+    font-size:22px;
+
+    color:#efb6c7;
+
+}
+
+.info-content{
+
+    flex:1;
+
+}
+
+.info-title{
+
+    font-family:"Poppins",sans-serif;
+
+    color:#8db2e5;
+
+    font-size:22px;
+
+
+}
+
+.info-sub{
+    font-family:"Poppins",sans-serif;
+
+    margin-top:5px;
+
+    color:#8db2e5;
+
+    font-size:22px;
+
+}
+
+.phone-number{
+
+    color:#efb6c7;
+
+    margin-bottom:6px;
+
+    font-size:22px;
+
+}
+
