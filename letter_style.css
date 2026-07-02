@@ -775,10 +775,10 @@ body{
 }
 
 .invitation-card{
+     width:min(720px,92vw);
+     /* width:600px;
 
-     width:600px;
-
-    max-width:88vw;
+    max-width:88vw; */
 
     padding:35px 40px;
 
