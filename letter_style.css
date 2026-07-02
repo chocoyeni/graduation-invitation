@@ -112,6 +112,7 @@ body{
 }
 
 .page-title p{
+       font-family:"Poppins",sans-serif;
 
     margin-top:8px;
 
@@ -498,6 +499,7 @@ body{
 .calendar-label,
 
 .calendar-time{
+      font-family:"Poppins",sans-serif;
 
     color:#ffc7d4;
 
@@ -931,7 +933,7 @@ transform-origin: center;
 
 .calendar-text{
 
-    font-family:"Bebas Neue",sans-serif;
+       font-family:"Poppins",sans-serif;
 
     font-size:28px;
 
@@ -1183,7 +1185,7 @@ transform-origin: center;
     }
 
     .tip-text{
-
+           font-family:"Poppins",sans-serif;
         text-align:center;
 
         font-size:16px;
