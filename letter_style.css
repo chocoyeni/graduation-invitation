@@ -766,26 +766,30 @@ body{
     visibility:visible;
 
 }
-
 .invitation-card{
 
-    width:min(720px,90vw);
+    width:min(680px,88vw);
 
-    max-height:90vh;
-
-    overflow:auto;
+    max-height:88vh;
 
     background:#fffdfb;
 
     border:1px solid #eef4fb;
 
-    padding:40px 50px;
+    padding:32px 40px;
 
     box-shadow:0 25px 70px rgba(0,0,0,.18);
 
     display:flex;
+
     flex-direction:column;
+
     align-items:center;
+
+    overflow:hidden;
+
+    animation:popup .45s ease;
+
 }
 @keyframes popup{
 
@@ -880,7 +884,7 @@ body{
 
     width:100%;
 
-    margin-top:55px;
+    margin-top:30px;
 
     display:flex;
 
@@ -983,7 +987,7 @@ body{
 
     width:100%;
 
-    margin-top:45px;
+    margin-top:25px;
 
     display:flex;
 
@@ -1034,7 +1038,7 @@ body{
 
     gap:18px;
 
-    margin-bottom:24px;
+    margin-bottom:12px;
 
 }
 
@@ -1238,8 +1242,7 @@ body{
         padding:20px 18px;
 
         border-radius:18px;
-
-        overflow:hidden;
+        max-height:92vh;
 
     }
 
@@ -1315,7 +1318,7 @@ body{
 
         margin-top:10px;
 
-        font-size:24px;
+        font-size:15px;
 
     }
 
