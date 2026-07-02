@@ -574,27 +574,20 @@ body{
 .invitation-full{
 
     position:fixed;
-
     inset:0;
 
     display:flex;
-
     justify-content:center;
-
     align-items:center;
 
-    background:rgba(0,0,0,.25);
-
+    background:rgba(255,255,255,.92);
     backdrop-filter:blur(6px);
 
     opacity:0;
-
     visibility:hidden;
+    transition:.4s;
 
-    transition:.45s ease;
-
-    z-index:9999;
-
+    overflow:hidden;
 }
 
 .invitation-full.show{
@@ -775,32 +768,25 @@ body{
 }
 
 .invitation-card{
-     
-    
-     width:600px;
 
-    max-width:88vw;
+    width:min(720px,90vw);
 
-    padding:35px 40px;
-width:min(720px,92vw);
-    height: auto;
+    max-height:90vh;
+
+    overflow:auto;
 
     background:#fffdfb;
 
     border:1px solid #eef4fb;
 
+    padding:40px 50px;
+
     box-shadow:0 25px 70px rgba(0,0,0,.18);
 
     display:flex;
-
     flex-direction:column;
-
     align-items:center;
-
-    animation:popup .45s ease;
-
 }
-
 @keyframes popup{
 
     from{
