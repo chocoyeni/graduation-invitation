@@ -776,8 +776,6 @@ body{
 
 .invitation-card{
 
-     width:min(720px,92vw);
-
      width:600px;
 
     max-width:88vw;
