@@ -776,20 +776,19 @@ body{
 
 .invitation-card{
 
-    transform: scale(0.82);
-
-transform-origin: center;
      width:min(720px,92vw);
 
-    max-width:92vw;
+     width:600px;
+
+    max-width:88vw;
+
+    padding:35px 40px;
 
     height: auto;
 
     background:#fffdfb;
 
     border:1px solid #eef4fb;
-
-    padding:50px 60px;
 
     box-shadow:0 25px 70px rgba(0,0,0,.18);
 
