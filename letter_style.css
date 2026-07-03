@@ -1167,7 +1167,7 @@ width:min(720px,92vw);
     }
 
     .page-title p{
-           font-family:"Poppins",sans-serif;
+           font-family:"Nunito",sans-serif;
         font-size:15px;
 
         letter-spacing:4px;
@@ -1188,7 +1188,7 @@ width:min(720px,92vw);
     }
 
     .tip-text{
-           font-family:"Poppins",sans-serif;
+           font-family:"Nunito",sans-serif;
         text-align:center;
 
         font-size:16px;
