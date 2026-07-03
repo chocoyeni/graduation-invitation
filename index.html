@@ -296,7 +296,25 @@ document.title = "Thư mời • " + displayName;
         // ==========================
         // MỞ THIỆP
         // ==========================
+function scaleInvitation() {
 
+    const card = document.querySelector(".invitation-card");
+
+    // Trả về kích thước gốc để tính
+    card.style.transform = "scale(1)";
+
+    const cardWidth = card.offsetWidth;
+    const cardHeight = card.offsetHeight;
+
+    const scale = Math.min(
+        (window.innerWidth - 40) / cardWidth,
+        (window.innerHeight - 40) / cardHeight,
+        1
+    );
+
+    card.style.transform = `scale(${scale})`;
+
+}
         const envelope = document.querySelector(".envelope-wrapper");
         const invitation = document.querySelector(".invitation-full");
         const tipText = document.querySelector(".tip-text");
@@ -322,13 +340,15 @@ document.title = "Thư mời • " + displayName;
 
             if (step === 1) {
 
-                invitation.classList.add("show");
+    invitation.classList.add("show");
 
-                step++;
+    scaleInvitation();
 
-                return;
+    step++;
 
-            }
+    return;
+
+}
 
         });
 
@@ -344,6 +364,7 @@ document.title = "Thư mời • " + displayName;
             step = 1;
 
         });
+        window.addEventListener("resize", scaleInvitation);
 
     </script>
 
