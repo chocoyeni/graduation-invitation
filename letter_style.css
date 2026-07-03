@@ -257,7 +257,7 @@ body{
 
 .graduate-name{
 
-    font-family:"Parisienne",cursive;
+    font-family:"Dancing Script",cursive;
 
     font-size:48px;
 
@@ -673,15 +673,27 @@ body{
 =========================== */
 
 @media (max-width:1100px){
-    .graduate-name{
+   .graduate-row{
 
-    font-size:16px;
-
-    letter-spacing:1px;
+    gap:8px;
 
     margin-top:8px;
 
-    margin-bottom:16px;
+    margin-bottom:14px;
+
+}
+
+.graduate-type{
+
+    font-size:14px;
+
+    letter-spacing:2px;
+
+}
+
+.graduate-name{
+
+    font-size:34px;
 
 }
     .hero{
