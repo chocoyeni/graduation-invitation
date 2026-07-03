@@ -259,11 +259,12 @@ body{
 
     font-family:"Dancing Script",cursive;
 
-    font-size:25px;
+    font-size:27px;
 
     color:#8fb2e7;
 
     line-height:1;
+     top:6px;
 
 }
 /* ===========================
@@ -693,7 +694,7 @@ body{
 
 .graduate-name{
 
-    font-size:25px;
+    font-size:27px;
 
 }
     .hero{
