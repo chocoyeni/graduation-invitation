@@ -944,7 +944,7 @@ width:min(720px,92vw);
 
     font-family:"Great Vibes",cursive;
 
-      font-size:clamp(42px,6vw,80px);
+      font-size:clamp(32px,5vw,58px);
 
     color:#efb6c7;
 
@@ -1346,6 +1346,7 @@ width:min(720px,92vw);
         font-size:48px;
 
         margin:10px 0 20px;
+        font-size:clamp(32px,5vw,58px);
 
     }
 
