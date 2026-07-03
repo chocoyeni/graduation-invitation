@@ -31,7 +31,7 @@ body{
     justify-content:center;
     align-items:center;
     background:var(--bg-color);
-    font-family:"Poppins",sans-serif;
+    font-family:"Nunito",sans-serif;
 }
 
 .container{
@@ -499,7 +499,7 @@ body{
 .calendar-label,
 
 .calendar-time{
-      font-family:"Poppins",sans-serif;
+      font-family:"Nunito",sans-serif;
 
     color:#ffc7d4;
 
@@ -839,7 +839,7 @@ width:min(720px,92vw);
 .invitation-title-small{
     margin-bottom:10px;
 
-    font-family:"Poppins",sans-serif;
+    font-family:"Nunito",sans-serif;
 
       font-size:clamp(14px,2vw,20px);
 
@@ -936,7 +936,7 @@ width:min(720px,92vw);
 
 .calendar-text{
 
-       font-family:"Poppins",sans-serif;
+       font-family:"Nunito",sans-serif;
 
     font-size:22px;
 
@@ -986,7 +986,7 @@ width:min(720px,92vw);
 
     margin-top:30px;
 
-    font-family:"Poppins",sans-serif;
+    font-family:"Nunito",sans-serif;
 
     font-size:34px;
 
@@ -1075,7 +1075,7 @@ width:min(720px,92vw);
 
 .info-title{
 
-    font-family:"Poppins",sans-serif;
+    font-family:"Nunito",sans-serif;
 
     color:#8db2e5;
 
@@ -1085,7 +1085,7 @@ width:min(720px,92vw);
 }
 
 .info-sub{
-    font-family:"Poppins",sans-serif;
+    font-family:"Nunito",sans-serif;
 
     margin-top:5px;
 
@@ -1314,7 +1314,7 @@ width:min(720px,92vw);
     }
 
     .calendar-text{
-        font-family:"Poppins",sans-serif;
+        font-family:"Nunito",sans-serif;
         font-size:12px;
 
     }
