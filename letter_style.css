@@ -1360,7 +1360,7 @@ width:min(720px,92vw);
 
     .invitation-title{
 
-         font-size:clamp(32px,4vw,55px);
+         font-size:clamp(28px,4vw,55px);
 
         white-space:nowrap;
         font-family:"Nunito",sans-serif;
