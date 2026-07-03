@@ -776,7 +776,7 @@ body{
 }
 
 .invitation-card{
-     
+     transform-origin: center;
     
      width:600px;
 
@@ -1249,7 +1249,7 @@ width:min(720px,92vw);
     /* Popup */
 
     .invitation-card{
-
+        transform-origin: center;
         width:94vw;
 
         height:auto;
