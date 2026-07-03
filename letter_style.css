@@ -227,23 +227,43 @@ body{
     }
 
 }
-.graduate-name{
+.graduate-row{
 
-    margin-top:10px;
+    display:flex;
 
-    margin-bottom:22px;
+    justify-content:center;
 
-    font-family:"Allura",sans-serif;
+    align-items:baseline;
 
-    font-size:22px;
+    gap:16px;
 
-    font-weight:600;
+    margin-top:12px;
 
-    letter-spacing:2px;
+}
+
+.graduate-type{
+
+    font-family:"Nunito",sans-serif;
+
+    font-size:18px;
+
+    letter-spacing:3px;
 
     color:#8fb2e7;
 
-    text-align:center;
+    font-weight:500;
+
+}
+
+.graduate-name{
+
+    font-family:"Parisienne",cursive;
+
+    font-size:48px;
+
+    color:#efb5c6;
+
+    line-height:1;
 
 }
 /* ===========================
