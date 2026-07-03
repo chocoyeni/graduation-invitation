@@ -256,7 +256,7 @@ body{
 } */
 
 .graduate-name{
-
+     position: relative;
     font-family:"Dancing Script",cursive;
 
     font-size:27px;
@@ -264,7 +264,7 @@ body{
     color:#8fb2e7;
 
     line-height:1;
-     margin-top:8px;
+     top:6px;
 
 }
 /* ===========================
